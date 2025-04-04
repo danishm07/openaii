@@ -1,9 +1,17 @@
 from dotenv import load_dotenv
 import os
+
+import requests
+import json
+
+
+from openai import OpenAI
+
+
 load_dotenv()
 
 
-Key = os.getenv('OPENAI_API_KEY')
+key = os.getenv('OPENAI_API_KEY')
 
 
 
